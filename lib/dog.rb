@@ -4,7 +4,7 @@ class Dog
   
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << self.save
   end
   
   def self.all
@@ -15,6 +15,10 @@ class Dog
     @@all.each do |dog|
       puts dog.name
     end
+  
+  def self.save
+    @@all << self.save
+  end
   
 end
 end
