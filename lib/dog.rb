@@ -19,6 +19,9 @@ class Dog
   
   
   
+  def self
+  
+  
 end
 end
     
